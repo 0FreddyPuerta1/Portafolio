@@ -1,0 +1,6 @@
+{
+  "watch": ["./src/*/**", "scripts", "config", "components"],
+  "ext": "js,jsx,ts,tsx,json",
+  "ignore": ["node_modules"],
+  "exec": "next dev"
+}
