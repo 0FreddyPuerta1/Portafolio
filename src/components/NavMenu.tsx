@@ -14,6 +14,7 @@ type MenuOption = {
   delay: number;
 };
 import { motion } from "framer-motion";
+import Link from "next/link";
 export default function NavMenu(): JSX.Element {
   const menuOptions: MenuOption[] = [
     {
@@ -61,7 +62,9 @@ export default function NavMenu(): JSX.Element {
             key={option.key}
             className="text-xl text-white hover:cursor-pointer"
           >
-            <FontAwesomeIcon icon={option.icon} />
+            <Link href={option.path}>
+              <FontAwesomeIcon icon={option.icon} />
+            </Link>
           </motion.li>
         ))}
       </ul>
