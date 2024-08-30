@@ -23,22 +23,15 @@ export default function ContactForm({ language }: Props) {
     e.preventDefault();
 
     if (formRef.current) {
-      emailjs
-        .send(
-          "service_bg6645n",
-          "template_yh4zxg6",
-          obj, // Aquí pasamos la referencia al formulario
-          "GIPoEoPgdsTgwR68n"
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-            setIsSubmitted(true);
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
+      emailjs.send("", "", obj, "").then(
+        (result) => {
+          console.log(result.text);
+          setIsSubmitted(true);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     }
   };
 
