@@ -15,7 +15,7 @@ export default function Header({
   setLanguage,
 }: HeaderProps): JSX.Element {
   return (
-    <motion.div className="flex p-2 text-white w-full justify-between md:pl-40 md:pr-20">
+    <motion.div className="flex p-2 text-white  md:h-10 justify-between md:pl-40 md:pr-20">
       <div className="flex items-center gap-2">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}

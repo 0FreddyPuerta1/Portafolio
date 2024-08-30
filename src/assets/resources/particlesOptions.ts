@@ -20,7 +20,7 @@ export const particlesOptions = () => ({
     },
     modes: {
       push: {
-        quantity: 4,
+        quantity: 1,
       },
       repulse: {
         distance: 200,
@@ -53,7 +53,7 @@ export const particlesOptions = () => ({
       density: {
         enable: true,
       },
-      value: 80,
+      value: 40,
     },
     opacity: {
       value: 0.5,

@@ -1,0 +1,72 @@
+[debug] [2024-08-30T03:33:10.271Z] ----------------------------------------------------------------------
+[debug] [2024-08-30T03:33:10.275Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Fredd\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-08-30T03:33:10.275Z] CLI Version:   13.16.0
+[debug] [2024-08-30T03:33:10.275Z] Platform:      win32
+[debug] [2024-08-30T03:33:10.275Z] Node Version:  v21.7.3
+[debug] [2024-08-30T03:33:10.276Z] Time:          Thu Aug 29 2024 22:33:10 GMT-0500 (hora estándar de Colombia)
+[debug] [2024-08-30T03:33:10.276Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-30T03:33:10.403Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-30T03:33:10.404Z] > authorizing via signed-in user (puertafreddy24@gmail.com)
+[debug] [2024-08-30T03:33:10.404Z] [iam] checking project portfolio-c065f for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-08-30T03:33:10.409Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-c065f:testIamPermissions [none]
+[debug] [2024-08-30T03:33:10.409Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-c065f:testIamPermissions x-goog-quota-user=projects/portfolio-c065f
+[debug] [2024-08-30T03:33:10.409Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-c065f:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-08-30T03:33:11.005Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-c065f:testIamPermissions 200
+[debug] [2024-08-30T03:33:11.005Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-c065f:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-08-30T03:33:11.006Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-c065f [none]
+[debug] [2024-08-30T03:33:11.444Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-c065f 200
+[debug] [2024-08-30T03:33:11.444Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-c065f {"projectId":"portfolio-c065f","projectNumber":"550440325966","displayName":"portfolio","name":"projects/portfolio-c065f","resources":{"hostingSite":"portfolio-c065f"},"state":"ACTIVE","etag":"1_1b851e8a-d0bf-40dc-99f2-c48164787018"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-08-30T03:33:38.126Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-c065f/sites/portfolio-c065f [none]
+[debug] [2024-08-30T03:33:39.001Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-c065f/sites/portfolio-c065f 200
+[debug] [2024-08-30T03:33:39.001Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-c065f/sites/portfolio-c065f {"name":"projects/portfolio-c065f/sites/portfolio-c065f","defaultUrl":"https://portfolio-c065f.web.app","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.7
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info] (node:8512) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info]  ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+
+[info] (node:12192) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info]  ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] Failed to compile.
+
+
+[info] ./src/app/contact/page.tsx:42:10
+Type error: Property 'language' is missing in type '{}' but required in type 'Props'.
+
+  40 |       </h1>
+  41 |       <div className="mt-10 p-4">
+> 42 |         <ContactForm />
+     |          ^
+  43 |       </div>
+  44 |       <NavMenu />
+  45 |     </div>
+
+[debug] [2024-08-30T03:35:06.719Z] Error: ENOENT: no such file or directory, open 'C:\Users\Fredd\OneDrive\Escritorio\Aurora Frontend\portafolio\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
